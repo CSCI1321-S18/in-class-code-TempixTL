@@ -1,6 +1,6 @@
 package adt
 
-trait Queue[A] {
+trait MyPriorityQueue[A] {
   
   def enqueue(element: A): Unit
   def dequeue(): A

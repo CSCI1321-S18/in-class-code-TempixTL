@@ -3,7 +3,7 @@ package adt
 import scala.reflect.ClassTag
 
 //Unsorted Array Priority Queue
-class UAPriorityQueue[A: ClassTag](higherP: (A, A) => Boolean) extends Queue[A] {
+class UAPriorityQueue[A: ClassTag](higherP: (A, A) => Boolean) extends MyPriorityQueue[A] {
   
   var arr = new Array[A](10)
   var end = 0
