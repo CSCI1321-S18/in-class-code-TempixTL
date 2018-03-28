@@ -7,7 +7,7 @@ import scala.util.Random
 
 class TestUAPriorityQueue {
   
-  var queue: Queue[Int] = null
+  var queue: MyPriorityQueue[Int] = null
   
   @Before def makeQueue() = {
     queue = new UAPriorityQueue[Int](_ > _)
