@@ -24,7 +24,7 @@ object BinPacking extends App {
         bins.indices.exists {j =>
           if (items(i) <= bins(j)) {
             bins(j) -= items(i)
-            val h = helper(i+1)
+            val h = helper2(i+1)
             bins(j) += items(i)
             h
           } else false
